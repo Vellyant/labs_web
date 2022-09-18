@@ -6815,8 +6815,9 @@ textarea.form-control-lg {
 .link-light {
   color: #f8f9fa !important;
 }
+/* modification */
 .link-light:hover, .link-light:focus {
-  color: #f9fafb !important;
+  color: #FF9031 !important;
 }
 
 .link-dark {
