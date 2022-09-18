@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+  --bs-dark-blue-rgb: 1, 82, 147;
+  --bs-blue-navbar-rgb: 21, 57, 86;
+  --bs-footer2-rgb:10, 41, 65;
+}
+
+.bg-dark-blue {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-blue-rgb), var(--bs-bg-opacity)) !important;
+  }
+  
+  .bg-blue-navbar {
+    --bs-bg-opacity: 0.95;
+    background-color: rgba(var(--bs-blue-navbar-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+  .bg-footer2 {
+    --bs-bg-opacity: 0.95;
+    background-color: rgba(var(--bs-footer2-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+  .p-main-small {
+    font-size: 14px;
+    color: #282828;
+    font-family: 'Lato', sans-serif,sans-serif;
+  }
+
+  .min-icons{
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+
+  }
+  .stock-list{
+  margin: 0 10px 0 0;
+  font-size: 12px;
+  }
+/* Рейтинг Звезды */
+  .list__rate {
+    margin: 0;
+}
+
+.list__rate li {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0 3px;
+    background: url(https://www.equipnet.ru/tm/assets/img/ic/ic_rate.png) center no-repeat;
+    vertical-align: middle;
+}
+
+.footer-margin {
+    max-width: 1140px;
+}

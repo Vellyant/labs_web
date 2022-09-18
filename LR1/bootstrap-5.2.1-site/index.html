@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" >
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar bg-light ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" width="262" height="44" class="d-inline-block align-text-top">
+            
+          </a>
+          <span class="navbar-text fw-bold text-dark">
+            Покупка и продажа<br> 
+          оборудования для бизнеса
+          </span>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Найти оборудование" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          <a class="nav-link" href="#">Регистрация</a>
+          <button class="btn btn-outline-success me-2" type="button">Войти</button>
+        </div>
+      </nav>
+
+      
+      <nav class="navbar navbar-expand-lg bg-dark-blue">
+        
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--- меню слева -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ОБОРУДОВАНИЕ
+                </a>
+                <ul class="dropdown-menu bg-blue-navbar">
+                  <li><a class="dropdown-item text-light" href="#">Перейти в раздел ></a></li>
+                  <li><a class="dropdown-item text-light" href="#">Автомобилестроение</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Биотопливо и альтернативная энергетика</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ПРЕДПРИЯТИЯ
+                </a>
+                <ul class="dropdown-menu bg-blue-navbar">
+                  <li><a class="dropdown-item text-light" href="#">Перейти в раздел ></a></li>
+                  <li><a class="dropdown-item text-light" href="#">Автомобилестроение</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Биотопливо и альтернативная энергетика</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 ДОСКА ОБЪЯВЛЕНИЙ
+                </a>
+                <ul class="dropdown-menu bg-blue-navbar">
+                  <li><a class="dropdown-item text-light" href="#">Перейти в раздел ></a></li>
+                  <li><a class="dropdown-item text-light" href="#">Доска объявлений по пищевому оборудованию</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Производство металлов / металлообрабатывающее оборудование</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  БИЗНЕС ИДЕИ
+                </a>
+                <ul class="dropdown-menu bg-blue-navbar">
+                  <li><a class="dropdown-item text-light" href="#">Перейти в раздел ></a></li>
+                  <li><a class="dropdown-item text-light" href="#">Автобизнес</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Бизнес в интернете</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">МАГАЗИН ЗАЯВОК</a>
+              </li>
+
+            </ul>
+          </div>
+<!--- меню справа -->
+          <ul class="nav justify-content-end ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Новости
+              </a>
+              <ul class="dropdown-menu bg-blue-navbar">
+                <li><a class="dropdown-item text-light" href="#">Перейти в раздел ></a></li>
+                <li><a class="dropdown-item text-light" href="#">Власть и бизнес</a></li>
+                <li><a class="dropdown-item text-light" href="#">Финансы</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Статьи
+              </a>
+              <ul class="dropdown-menu bg-blue-navbar">
+                <li><a class="dropdown-item text-light" href="#">Перейти в раздел ></a></li>
+                <li><a class="dropdown-item text-light" href="#">Власть и бизнес</a></li>
+                <li><a class="dropdown-item text-light" href="#">Финансы</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Интервью
+              </a>
+              <ul class="dropdown-menu bg-blue-navbar">
+                <li><a class="dropdown-item text-light" href="#">Перейти в раздел ></a></li>
+                <li><a class="dropdown-item text-light" href="#">Машиностроение и металлообработка</a></li>
+                <li><a class="dropdown-item text-light" href="#">Деревообработка</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Реклама</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+    <br>
+    <!-- Адрес Путь Хлебные крошки breadcrumb -->
+    <div class="container">
+      <div class="d-flex">
+    <div class="d-flex align-content-start flex-wrap col-md-10">
+      <ol class="breadcrumb">
+      <a class="p-2 breadcrumb-item" href="#">Главная</a>
+      <a class="p-2 breadcrumb-item" href="#">Каталог оборудования</a>
+      <a class="p-2 breadcrumb-item" href="#">Оборудование для производства напитков и табака</a>
+      <a class="p-2 breadcrumb-item" href="#">Газирование минеральной воды</a>
+      <a class="p-2 breadcrumb-item active" href="#">Линия газирования напитков</a>
+    </ol>
+    </div>
+    <a class="p-2 fs-5 link-secondary" href="#">< Вернуться назад</a>
+  </div>
+  <hr class="featurette-divider">
+  </div>
+  <!-- end Адрес Путь Хлебные крошки breadcrumb -->
+
+  
+  <main>
+    
+ 
+
+      <!-- Основной контент Основная страница -->
+
+    <div class="container marketing">
+    
+      <div class="row featurette">
+        <div class="d-flex">
+          <p class="lead  flex-grow-1">Просмотров: 2504 &nbsp &nbsp Размещено: 17.03.2010</p>
+            <div class="list__rate">
+              <ul class="list-inline">
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+              </ul>
+          </div>
+        </div>
+          <br><br><br>
+          
+          <!-- Основная страница Описание  -->
+
+          <div class="col-md-4 order-md-1">
+            <img src="img/scheme.jfif" class="figure-img img-fluid rounded" width="350" height="240">
+          </div>
+
+          <div class="col-md-5 order-md-2">
+            <h4 class="featurette-heading fw-normal lh-1"> Линия газирования напитков, Агростроймонтаж</h4>
+            <p class="p-main-small">
+              <p class="d-flex"> 
+              <span class="stock-list">
+                <img class="min-icons" src="https://www.equipnet.ru/tm/assets/dev/img/stock.svg">В наличии </span>
+              <span class="stock-list">
+                <img class="min-icons" src="https://www.equipnet.ru/tm/assets/dev/img/use.svg">Новое</span>
+            </p>
+              <strong>Код товара:</strong> 16539 <br>
+              <strong>Страна-производитель:</strong> Агростроймонтаж-2, ООО<br>
+              <strong>Назначение:</strong> Комплексы оборудования для обеспечения двуокисью углерода линий по газированию и консервации напитков, производства пива, шампанского:<br>
+              - резервуары для хранения углекислоты РДХ 12,5-2,0; 22,5-2,0; 40-2,0; 50-2,0;<br>
+              - резервуар для хранения и транспортировки углекислоты РХТУ 4-1,8;<br>
+              - полуприцеп-цистерны для транспортировки углекислоты ЦЖУ 10-2,0; 18-2,0; 22-2,0;<br>
+              - газификаторы производительностью до 1100 кг/ч;<br>
+              - подогреватели производительностью до 1100 кг/ч;<br>
+              - станции перекачивания (перелива) углекислоты;<br>
+              - станции зарядки баллонов и огнетушителей углекислотой;<br>
+              - редукторы;<br>
+              - участки по ремонту и освидетельствованию баллонов.</p>
+          </div>
+
+
+      <div class="col-md-3 order-md-3">
+
+            <p class="p-main-small">
+              <img src="img/logo-agro.jpeg" class="figure-img img-fluid rounded" width="100" height="78">
+              <a class="p-2 link-dark" href="#"><strong>Агростроймонтаж-2</strong></a>
+            </p>
+              <strong>Адрес</strong><br> Самара, пр-кт Кирова, 24, оф. 66<br>
+            </p>
+            <hr class="featurette-divider">
+
+      </div>
+    </div>
+    
+        <hr class="featurette-divider">
+    
+       
+    
+        <hr class="featurette-divider">
+    
+
+
+
+        <!-- /END THE FEATURETTES -->
+    
+      </div>
+      <!-- /.container -->
+    
+    
+      
+      <footer class="bg-blue-navbar text-light ">
+        <div class="p-3 container">
+
+          <div class="d-flex flex-row">
+            УПРАВЛЕНИЕ ПРЕДПРИЯТИЕМ 
+            ПОЛИТИКА 
+            ПОРТАЛА 
+            ВЫСТАВКИ 
+            О ПРОЕКТЕ 
+            НОВОСТИ 
+            КОМПАНИЙ 
+            ОБЗОР РЫНКОВ 
+            ЛИЗИНГ
+          </div>
+
+      </div>
+
+      <div class="bg-footer2">
+      <div class="p-3 container">
+        2000 — 2022 © «Гипер-Пресс»
+        Equipnet.ru — "Оборудование для бизнеса"
+      </div>
+    </div>
+      </footer>
+      
+    <!-- END FOOTER конец подвал -->
+    
+    </main>
+    
+    
+        <script src="js/bootstrap.bundle.min.js"></script>
+    
+          
+      </body>
+</html>
