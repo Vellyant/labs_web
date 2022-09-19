@@ -86,10 +86,22 @@
   padding: 20px 20px 30px 20px;
 
 }
+.card-img-top{
+  max-height: 180px;
+  width:100%;
 
+}
+.img-card-container{
+  height: 180px;
+
+}
+.card-text-container{
+  max-height: 50px;
+
+}
 .bg-section {
   background-color: #F2F6F9;
-
+padding: 20px;
 
 }
 
