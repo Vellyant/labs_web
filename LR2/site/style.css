@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+:root {
+  --bs-dark-blue-rgb: 1, 82, 147;
+  --bs-blue-navbar-rgb: 21, 57, 86;
+  --bs-footer2-rgb: 10, 41, 65;
+}
+
+.bg-dark-blue {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-blue-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-blue-navbar {
+  --bs-bg-opacity: 0.95;
+  background-color: rgba(var(--bs-blue-navbar-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-footer2 {
+  --bs-bg-opacity: 0.95;
+  background-color: rgba(var(--bs-footer2-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.p-main-small {
+  font-size: 14px;
+  color: #282828;
+  font-family: 'Lato', sans-serif;
+}
+
+.min-icons {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+
+}
+
+.stock-list {
+  margin: 0 10px 0 0;
+  font-size: 12px;
+}
+
+/* Рейтинг Звезды */
+.list__rate {
+  margin: 0;
+}
+
+.list__rate li {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 0 3px;
+  background: url(https://www.equipnet.ru/tm/assets/img/ic/ic_rate.png) center no-repeat;
+  vertical-align: middle;
+}
+
+
+
+.footer__navigation {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+}
+
+.city-link:hover {
+  color: #f8f9fa !important;
+  text-decoration: none !important;
+}
+
+.icons {
+  background: #E4EAEE;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.tab-text {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.tab-content {
+  background-color: #F2F6F9;
+  padding: 20px 20px 30px 20px;
+
+}
+.card-img-top{
+  max-height: 180px;
+  width:100%;
+
+}
+.img-card-container{
+  height: 180px;
+
+}
+.card-text-container{
+  max-height: 50px;
+
+}
+.bg-section {
+  background-color: #F2F6F9;
+padding: 20px;
+
+}
+
+.tab-nav-content {
+  color: #707e88 !important;
+  background-color: #e3eaef !important;
+  border-radius: 4px 4px 0 0;
+}
+
+/*  скрытые блоки  */
+
+.hide,
+.hide+label~div {
+  display: none;
+}
+
+/* вид текста label */
+.hide+label,
+.hide:checked+label {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  padding: 0;
+  color: #f8f9fa;
+  cursor: pointer;
+  border-bottom: 1px dashed currentColor;
+  background: url(https://www.equipnet.ru/tm/assets/img/ic/ic_dd.png)right center no-repeat;
+  padding-right: 20px;
+}
+
+.hide:checked+label {
+  border-bottom: 1px dashed currentColor;
+  background: url(https://www.equipnet.ru/tm/assets/img/ic/ic_du.png)right center no-repeat;
+  padding-right: 20px;
+}
+
+.hide:hover+label {
+  border-bottom: 0;
+}
+
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked+label+div {
+  display: block;
+}
+
+/* end скрытые блоки */
+
