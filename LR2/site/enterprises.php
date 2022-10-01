@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar bg-light ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" width="262" height="44" class="d-inline-block align-text-top">
+
+        </a>
+        <span class="navbar-text fw-bold text-dark">
+          Покупка и продажа<br>
+          оборудования для бизнеса
+        </span>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Найти оборудование" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        <a class="nav-link" href="#">Регистрация</a>
+        <button class="btn btn-outline-success me-2" type="button">Войти</button>
+      </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark-blue">
+
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--- меню слева -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                ОБОРУДОВАНИЕ
+              </a>
+              <ul class="dropdown-menu bg-blue-navbar">
+                <li><a class="dropdown-item link-light" href="#">Перейти в раздел ></a></li>
+                <li><a class="dropdown-item link-light" href="#">Автомобилестроение</a></li>
+                <li><a class="dropdown-item link-light" href="#">Биотопливо и альтернативная энергетика</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                ПРЕДПРИЯТИЯ
+              </a>
+              <ul class="dropdown-menu bg-blue-navbar">
+                <li><a class="dropdown-item link-light" href="#">Перейти в раздел ></a></li>
+                <li><a class="dropdown-item link-light" href="#">Автомобилестроение</a></li>
+                <li><a class="dropdown-item link-light" href="#">Биотопливо и альтернативная энергетика</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                ДОСКА ОБЪЯВЛЕНИЙ
+              </a>
+              <ul class="dropdown-menu bg-blue-navbar">
+                <li><a class="dropdown-item link-light" href="#">Перейти в раздел ></a></li>
+                <li><a class="dropdown-item link-light" href="#">Доска объявлений по пищевому оборудованию</a></li>
+                <li><a class="dropdown-item link-light" href="#">Производство металлов / металлообрабатывающее
+                    оборудование</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                БИЗНЕС ИДЕИ
+              </a>
+              <ul class="dropdown-menu bg-blue-navbar">
+                <li><a class="dropdown-item link-light" href="#">Перейти в раздел ></a></li>
+                <li><a class="dropdown-item link-light" href="#">Автобизнес</a></li>
+                <li><a class="dropdown-item link-light" href="#">Бизнес в интернете</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">МАГАЗИН ЗАЯВОК</a>
+            </li>
+
+          </ul>
+        </div>
+        <!--- меню справа -->
+        <ul class="nav justify-content-end ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Новости
+            </a>
+            <ul class="dropdown-menu bg-blue-navbar">
+              <li><a class="dropdown-item link-light" href="#">Перейти в раздел ></a></li>
+              <li><a class="dropdown-item link-light" href="#">Власть и бизнес</a></li>
+              <li><a class="dropdown-item link-light" href="#">Финансы</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Статьи
+            </a>
+            <ul class="dropdown-menu bg-blue-navbar">
+              <li><a class="dropdown-item link-light" href="#">Перейти в раздел ></a></li>
+              <li><a class="dropdown-item link-light" href="#">Власть и бизнес</a></li>
+              <li><a class="dropdown-item link-light" href="#">Финансы</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Интервью
+            </a>
+            <ul class="dropdown-menu bg-blue-navbar">
+              <li><a class="dropdown-item link-light" href="#">Перейти в раздел ></a></li>
+              <li><a class="dropdown-item link-light" href="#">Машиностроение и металлообработка</a></li>
+              <li><a class="dropdown-item link-light" href="#">Деревообработка</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link link-light" href="#">Реклама</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Адрес Путь Хлебные крошки breadcrumb -->
+  <div class="container my-2">
+    <div class="d-flex">
+      <div class="d-flex align-content-start flex-wrap col-md-10">
+        <ol class="breadcrumb">
+          <a class="p-2 breadcrumb-item" href="#">Главная</a>
+          <a class="p-2 breadcrumb-item" href="#">Каталог оборудования</a>
+          <a class="p-2 breadcrumb-item" href="#">Оборудование для производства напитков и табака</a>
+          <a class="p-2 breadcrumb-item" href="#">Газирование минеральной воды</a>
+          <a class="p-2 breadcrumb-item active" href="#">Линия газирования напитков</a>
+        </ol>
+      </div>
+      <a class="p-2 fs-5 link-secondary" href="#">
+        < Вернуться назад</a>
+    </div>
+    <hr>
+  </div>
+  <!-- end Адрес Путь Хлебные крошки breadcrumb -->
+
+
+  <main>
+
+
+
+    <!-- Основной контент Основная страница -->
+
+    <div class="container">
+
+      <div class="row my-3 my-3">
+        <div class="d-flex">
+          <p class="lead  flex-grow-1">Просмотров: 2504 &nbsp &nbsp Размещено: 17.03.2010</p>
+          <div class="list__rate">
+            <ul class="list-inline">
+              <li class=""></li>
+              <li class=""></li>
+              <li class=""></li>
+              <li class=""></li>
+              <li class=""></li>
+            </ul>
+          </div>
+        </div>
+       
+
+        <!-- Основная страница Описание  -->
+
+        <div class="col-md-4 order-md-1">
+          <img src="img/scheme.jfif" class="figure-img img-fluid rounded" width="350" height="240">
+        </div>
+
+        <div class="col-md-5 order-md-2">
+          <h4 class=" fw-normal lh-1"> Линия газирования напитков, Агростроймонтаж</h4>
+          <p class="p-main-small">
+          <p class="d-flex">
+            <span class="stock-list">
+              <img class="min-icons" src="https://www.equipnet.ru/tm/assets/dev/img/stock.svg">В наличии </span>
+            <span class="stock-list">
+              <img class="min-icons" src="https://www.equipnet.ru/tm/assets/dev/img/use.svg">Новое</span>
+          </p>
+          <strong>Код товара:</strong> 16539 <br>
+          <strong>Страна-производитель:</strong> Агростроймонтаж-2, ООО<br>
+          <strong>Назначение:</strong> Комплексы оборудования для обеспечения двуокисью углерода линий по газированию и
+          консервации напитков, производства пива, шампанского:<br>
+          - резервуары для хранения углекислоты РДХ 12,5-2,0; 22,5-2,0; 40-2,0; 50-2,0;<br>
+          - резервуар для хранения и транспортировки углекислоты РХТУ 4-1,8;<br>
+          - полуприцеп-цистерны для транспортировки углекислоты ЦЖУ 10-2,0; 18-2,0; 22-2,0;<br>
+          - газификаторы производительностью до 1100 кг/ч;<br>
+          - подогреватели производительностью до 1100 кг/ч;<br>
+          - станции перекачивания (перелива) углекислоты;<br>
+          - станции зарядки баллонов и огнетушителей углекислотой;<br>
+          - редукторы;<br>
+          - участки по ремонту и освидетельствованию баллонов.</p>
+
+          <hr>
+          <p class="fs-4"><b>Цена 150 000 руб</b></p>
+          <div class="d-grid gap-2 d-md-flex">
+            <div>
+              <button type="button" class="btn btn-warning text-light"
+                style="--bs-btn-padding-y: 0.75rem; --bs-btn-padding-x: 2rem;--bs-btn-font-size: 0.95rem;">
+                <strong>ЗАКАЗАТЬ</strong></button>
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-secondary"
+                style="--bs-btn-padding-y: 0.75rem; --bs-btn-padding-x: 2rem;--bs-btn-font-size: 0.95rem;">
+                <strong>РАССЧИТАТЬ В ЛИЗИНГ</strong></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 order-md-3">
+
+          <p class="p-main-small my-2">
+            <img src="img/logo-agro.jpeg" class="figure-img img-fluid rounded" width="100" height="78">
+            <a class="p-2 link-dark" href="#"><strong>Агростроймонтаж-2</strong></a>
+          </p>
+          <strong>Адрес:</strong><br> Самара, пр-кт Кирова, 24, оф. 66
+          </p>
+          <hr>
+          <div class="d-grid gap-2 col-10 mx-auto">
+
+            <button type="button" class="btn btn-success"><span>Показать телефон</span><br>
+              <span>+7(987) XXX-XX-XX</span></button>
+
+          </div>
+          <div class="d-flex flex-row-reverse ">
+            <a class="p-2 link-danger small" href="#">Пожаловаться</a>
+          </div>
+          <hr>
+          <div class="d-flex text-center">
+            <div class="col-6">
+              <img src="img/i1.svg" class="icons" width="45" height="45" /><br>
+              12 лет на сайте
+            </div>
+            <div class="col-6"><img src="img/i4.svg" class="icons" width="45" height="45" /><br>
+              Безопасная сделка</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Вкладки табы navigational tabs -->
+
+      <div class="col-md-9 my-5">
+        <ul class="nav nav-tabs" id="about" role="tablist">
+          <li class="nav-item tab-nav-content" role="presentation">
+            <button class="nav-link active text-secondary" id="description-tab" data-bs-toggle="tab"
+              data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane"
+              aria-selected="true">
+              Описание</button>
+          </li>
+          <li class="nav-item tab-nav-content" role="presentation">
+            <button class="nav-link text-secondary" id="specifications-tab" data-bs-toggle="tab"
+              data-bs-target="#specifications-tab-pane" type="button" role="tab" aria-controls="specifications-tab-pane"
+              aria-selected="false">
+              Технические характеристики</button>
+          </li>
+          <li class="nav-item tab-nav-content" role="presentation">
+            <button class="nav-link text-secondary" id="additionally-tab" data-bs-toggle="tab"
+              data-bs-target="#additionally-tab-pane" type="button" role="tab" aria-controls="additionally-tab-pane"
+              aria-selected="false">
+              Дополнительно</button>
+          </li>
+          <li class="nav-item tab-nav-content " role="presentation">
+            <button class="nav-link text-secondary" id="payment-tab" data-bs-toggle="tab"
+              data-bs-target="#payment-tab-pane" type="button" role="tab" aria-controls="payment-tab-pane"
+              aria-selected="false">
+              Доставка и оплата</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="aboutContent">
+          <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
+            aria-labelledby="description-tab" tabindex="0">
+
+            <p class="p-2 fs-2 fw-bold">Описание</p>
+            <p class="p-2 tab-text">
+              Проектирование, изготовление, монтаж и пуско-наладка оборудования для хранения, транспортировки, выдачи
+              углекислоты, заправки её в баллоны и огнетушители. Оборудование для технического освидетельствования и
+              ремонта
+              баллонов и огнетушителей. Комплексы углекислотного оборудования для приготовления защитных сварочные смеси
+              газов и заправки их в баллоны. Комплексы оборудования для подкормки растений углекислотой. Комплексы
+              обеспечения углекислотой линии газирования напитков, линии производства пива: - резервуары для хранения
+              углекислоты; - полуприцеп-цистерны для транспортировки углекислоты; - газификаторы производительностью до
+              1100
+              кг/ч; - подогреватели производительностью до 1100 кг/ч; - станции перекачивания (перелива) углекислоты; -
+              станции зарядки баллонов и огнетушителей углекислотой; - редукторы; - участки по ремонту и
+              освидетельствованию
+              баллонов. Оборудование применяется в пищевой промышленности, металлургии, механической обработке металлов,
+              производстве пенополиуретановых теплоизоляционных материалов, в обслуживании систем пожаротушения,
+              сельском
+              хозяйстве, парфюмерной и фармацевтической промышленности, а также во многих других видах деятельности.
+            </p>
+            <button type="button" class="btn btn-success fw-semibold">Связаться с продавцом</button>
+          </div>
+          <div class="tab-pane fade" id="specifications-tab-pane" role="tabpanel" aria-labelledby="specifications-tab"
+            tabindex="0">
+            <p class="p-2 tab-text">
+              Наши основные задачи:<br>
+              1. Гибкие, герметичные металлорукава высокого давления Ду6-250, P до 280<br>
+              2. Рем.комплект и запасные части для зарядных и перекачивающих станций: комплект уплотнений, резиновые
+              прокладки, рукава высокого давления, краны, быстросъемные соединения.<br>
+              3. Производство оборудования для работы с техническими газами<br>
+              4. Обслуживание и зарядка баллонов и огнетушителей<br>
+              5. Ремонт и техническое обслуживание спецтехники<br>
+              6. Разработка комплексов по производству сварочных смесей газов<br>
+              7. Разработка комплексов обеспечения углекислотой линии по газированию напитков<br>
+              8. Поставка техники для наземного обслуживания в аэропортах, техническое обслуживание, ремонт,
+              диагностика,
+              продление ресурса, поставка запасных частей для:
+              АКЗС-75М, АКЗС-80, ЗСЖ, АПА, ВЗ, СКДС, АКДС, СПО-15, УПГ, УМП, МП, УВЗ.<br>
+              9. Поставка промышленной арматуры: вентили, затворы, краны, задвижки, приводы, предохранительные клапаны,
+              индикаторы уровня, мембраны разрывные, рукава высокого давления, манометры, ТЭНы, уплотнительные кольца.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="additionally-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+            tabindex="0">
+            <p class="p-2 fs-3"><b>Лицензии и сертификаты</b></p>
+
+            <p>Нет</p>
+          </div>
+          <div class="tab-pane fade" id="payment-tab-pane" role="tabpanel" aria-labelledby="payment-tab" tabindex="0">
+
+            <p class="p-2 fs-3"><b> Доставка и оплата</b></p>
+          </div>
+        </div>
+
+       
+      <div class="my-4">
+          <ul class="nav nav-tabs " id="Feedback" role="tablist">
+            <li class="nav-item tab-nav-content" role="presentation">
+              <button class="nav-link active text-secondary" id="reviews-tab" data-bs-toggle="tab"
+                data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane"
+                aria-selected="true">Отзывы</button>
+            </li>
+            <li class="nav-item tab-nav-content" role="presentation">
+              <button class="nav-link text-secondary" id="FAQ-tab" data-bs-toggle="tab" data-bs-target="#FAQ-tab-pane"
+                type="button" role="tab" aria-controls="FAQ-tab-pane" aria-selected="false">Вопросы-ответы</button>
+            </li>
+  
+          </ul>
+          <div class="tab-content" id="FeedbackContent">
+            <div class="tab-pane fade show active" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab"
+              tabindex="0">
+  
+              <p class="p-2 fs-3">Отзывы</p>
+              <p class="fst-italic  ">О компании “Агростроймонтаж-2” пока нет отзывов :(
+                <br><br>Хотите оставить?
+              </p><br>
+              <button type="button" class="btn btn-success fw-semibold">Оставить отзыв</button>
+            </div>
+            <div class="tab-pane fade" id="FAQ-tab-pane" role="tabpanel" aria-labelledby="FAQ-tab" tabindex="0">
+  
+              <p class="p-2 fs-3 fw-bold">Вопросы-ответы</p>
+              <p class="p-2 ">Нет вопросов.</p><br>
+              <button type="button" class="btn btn-success fw-semibold">Задать вопрос</button>
+            </div>
+  
+          </div>
+      </div>
+        <!-- конец Вкладки табы -->
+       
+
+        <div>
+          <p class="p-2 fs-3 fw-bold my-2">Все оборудование поставщика</p>
+          
+          <div class="my-4">
+            <span class="p-2 fw-bold">КАТЕГОРИИ: </span>
+            <a class="p-2 link-danger" href="#">Газирование минеральной воды</a>
+            <a class="p-2 link-danger" href="#">Другое</a>
+            <a class="p-2 link-danger" href="#">Производство технических и обработка природных газов</a>
+            <a class="p-2 link-danger" href="#">Уровнемеры</a>
+
+          </div> 
+      
+          <div class="row ">
+            <div class="col-md-3">
+              <img src="img/equipment_1.jfif" width="170" height="126">
+            </div>
+            <div class="col-md-7">
+              <a class="" href="#">Полуприцеп-цистерны для транспортировки жидкой двуокиси углерода, ЦЖУ</a>
+
+              <p class="text-secondary">Категория:
+                <a class="link-secondary" href="#">Производство технических и обработка природных газов</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="p-2 fs-5 fw-semibold text-end">500 000 руб</p>
+            </div>
+          </div>
+
+          <hr class="my-3">
+          <div class="row ">
+            <div class="col-md-3">
+              <img src="img/equipment_2.jfif" width="170" height="126">
+            </div>
+            <div class="col-md-7">
+              <a class="" href="#">Резервуары для хранения жидкой двуокиси углерода, РДХ</a>
+              <p class="text-secondary">Категория:
+                <a class="link-secondary" href="#">Производство технических и обработка природных газов</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="p-2 fs-5 fw-semibold text-end">500 000 руб</p>
+            </div>
+          </div>
+
+          <hr class="my-3">
+          <div class="row ">
+            <div class="col-md-3">
+              <img src="img/equipment_3.jfif" width="170" height="126">
+            </div>
+            <div class="col-md-7">
+              <a class="" href="#">Станция зарядки баллонов и огнетушителей, ремкомплект, запасные части,
+                Агростроймонтаж</a>
+              <p class="text-secondary">Категория:
+                <a class="link-secondary" href="#">Производство технических и обработка природных газов</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="p-2 fs-5 fw-semibold text-end">120 000 руб</p>
+            </div>
+          </div>
+
+          <hr class="my-3">
+          <div class="row ">
+            <div class="col-md-3">
+              <img src="img/equipment_4.jfif" width="170" height="126">
+            </div>
+            <div class="col-md-7">
+              <a class="" href="#">Станция перекачивания сжиженных газов, ремкомплект, запасные части,
+                Агростроймонтаж</a>
+              <p class="text-secondary">Категория:
+                <a class="link-secondary" href="#">Производство технических и обработка природных газов</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="p-2 fs-5 fw-semibold text-end">90 000 руб</p>
+            </div>
+          </div>
+          <hr class="my-3">
+          <a class="link-secondary" href="#">Показать ещё оборудование поставщика ></a>
+        </div>
+      </div>
+      
+      <!-- /END  Основной контент Основная страница -->
+
+    </div>
+    <!-- /.container -->
+
+
+    <div  class="bg-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card bg-section border-light my-3">
+              <div class="card-body ">
+                <div class="text-center mb-4">
+                  <img src="img/card-carusel.jfif" class="card-img-top" >
+                </div>
+               
+
+                <div class="card-text-container mb-5">
+                  <a href="#" class="card-link">Этикетировочный автомат (карусельного типа) для полипропиленовой этикетки</a></div>
+                
+                
+                  <p class="card-text">Краснодар</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card bg-section border-light ">
+              <div class="card-body">
+                <div class="text-center mb-4">
+                  <img src="img/card-pump.jfif" class="card-img-top " >
+                </div>
+               
+                <div class="card-text-container mb-5">
+                  <a href="#" class="card-link">Насос для углекислоты, НШ</a></div>
+        
+                <p class="card-text">Самара</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card bg-section border-light ">
+              <div class="card-body">
+                <div class="text-center img-card-container mb-4">
+                  <img src="img/card-tanks.jpg" class="card-img-top " >
+                </div>
+                
+                <div class="card-text-container  mb-5">
+                  <a href="#" class="card-link">Полуприцеп-цистерны для транспортировки жидкой углекислоты, ЦЖУ-10-2,0</a></div>
+             
+                <p class="card-text">Самара</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card bg-section border-light ">
+              <div class="card-body">
+                <div class="text-center  mb-4">
+                  <img src="img/card-filling-machine.jpg" class="card-img-top" >
+                </div>
+              
+                <div class="card-text-container mb-5">
+                  <a href="#" class="card-link">Автомат розлива газированных напитков и пива, XRB-6</a></div>
+               
+                <p class="card-text">Санкт-Петербург</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+
+
+    <!-- FOOTER  подвал -->
+    <footer class="bg-blue-navbar">
+      <div class="p-3 container">
+
+        <div class="d-flex flex-row footer__navigation">
+          <a class="p-2 link-light text-decoration-none" href="#">УПРАВЛЕНИЕ ПРЕДПРИЯТИЕМ </a>
+          <a class="p-2 link-light text-decoration-none" href="#">ПОЛИТИКА ПОРТАЛА </a>
+          <a class="p-2 link-light text-decoration-none" href="#">ВЫСТАВКИ </a>
+          <a class="p-2 link-light text-decoration-none" href="#">О ПРОЕКТЕ </a>
+          <a class="p-2 link-light text-decoration-none" href="#">НОВОСТИ </a>
+          <a class="p-2 link-light text-decoration-none" href="#">КОМПАНИЙ </a>
+          <a class="p-2 link-light text-decoration-none" href="#">ОБЗОР РЫНКОВ </a>
+          <a class="p-2 link-light text-decoration-none" href="#">ЛИЗИНГ</a>
+        </div>
+        <hr class="text-light">
+
+        <!-- Скрытый блок скрывающийся блок-->
+        <input class="hide" id="hd-1" type="checkbox">
+        <label for="hd-1">Продажа оборудования</label>
+        <div>
+          <!-- Скрытое содержание-->
+          <div class="row">
+            <ul class="col-sm-2 list-unstyled">
+              <li><a class="link-light city-link" href="#">Нижний Новгород</a></li>
+              <li><a class="link-light city-link" href="#">Пермь</a></li>
+              <li><a class="link-light city-link" href="#">Уфа</a> </li>
+              <li><a class="link-light city-link" href="#">Казань</a></li>
+            </ul>
+            <ul class="col-sm-2 list-unstyled">
+              <li><a class="link-light city-link" href="#">Ижевск</a></li>
+              <li><a class="link-light city-link" href="#">Самара</a></li>
+              <li><a class="link-light city-link" href="#">Санкт-Петербург</a></li>
+              <li><a class="link-light city-link" href="#">Красноярск</a></li>
+
+            </ul>
+            <ul class="col-sm-2 list-unstyled">
+              <li><a class="link-light city-link" href="#">Новосибирск</a></li>
+              <li><a class="link-light city-link" href="#">Омск</a></li>
+              <li><a class="link-light city-link" href="#">Екатеринбург</a></li>
+              <li><a class="link-light city-link" href="#">Челябинск</a></li>
+            </ul>
+            <ul class="col-sm-2 list-unstyled">
+              <li> <a class="link-light city-link" href="#">Владимир</a></li>
+              <li> <a class="link-light city-link" href="#">Воронеж</a></li>
+              <li> <a class="link-light city-link" href="#">Калуга</a></li>
+              <li> <a class="link-light city-link" href="#">Кострома</a></li>
+            </ul>
+            <ul class="col-sm-2 list-unstyled">
+              <li> <a class="link-light city-link" href="#">Москва</a></li>
+              <li> <a class="link-light city-link" href="#">Тверь</a></li>
+              <li> <a class="link-light city-link" href="#">Тула</a></li>
+              <li> <a class="link-light city-link" href="#">Ярославль</a></li>
+            </ul>
+            <ul class="col-sm-2 list-unstyled">
+              <li> <a class="link-light city-link" href="#">Волгоград</a></li>
+              <li> <a class="link-light city-link" href="#">Краснодар</a></li>
+              <li> <a class="link-light city-link" href="#">Ростов-на-Дону</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+        <!-- конец Скрытый блок скрывающийся блок-->
+      </div>
+
+
+
+      <div class="bg-footer2">
+
+        <div class="p-3 container">
+          <div class="text-light row small">
+            <div class="col-md-3">
+              2000 — 2022 © «Гипер-Пресс»<br>
+              Equipnet.ru — "Оборудование для бизнеса"
+            </div>
+            <div class="col-md-4">
+              Все материалы данного сайта, авторские права на которые принадлежат EquipNet.ru, не могут быть
+              скопированы.
+            </div>
+            <div class="col-md-3">
+              Реклама: <a class="link-light city-link" href="#">reklama@equipnet.ru</a><br>
+              Тех. поддержка: <a class="link-light city-link" href="#">support@equipnet.ru</a><br>
+              Редактор сайта: <a class="link-light city-link" href="#">redaktor@equipnet.ru</a><br>
+            </div>
+
+            <div class="col-md-2">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g transform="">
+                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#ffffff">
+                      <path
+                        d="M163.98408,126.1405c-6.43925,-11.5885 -23.0265,-25.51333 -29.87425,-31.57275c-1.87408,-1.65908 -2.07475,-4.52933 -0.36908,-6.364c13.06842,-14.04308 23.521,-30.17883 27.11867,-39.92908c1.58742,-4.30717 -1.6985,-8.858 -6.32817,-8.858h-13.44825c-4.43258,0 -7.02692,1.591 -8.26317,4.12442c-10.86108,22.25608 -20.17775,31.88808 -26.69942,37.5175c-3.65142,3.15333 -9.34533,0.54108 -9.34533,-4.257c0,-9.245 0,-21.19542 0,-29.67c0,-4.11008 -3.36117,-7.43542 -7.50708,-7.43542l-24.56733,-0.2795c-3.09242,0 -4.859,3.50092 -3.00283,5.9555l4.05633,5.82292c1.5265,2.01742 2.35067,4.472 2.35067,6.99108l-0.0215,26.22283c0,4.56158 -5.52908,6.79042 -8.81142,3.59408c-11.10475,-10.8145 -20.74033,-32.89858 -24.209,-43.45867c-1.00333,-3.05658 -3.86642,-5.12058 -7.11292,-5.12775l-13.24758,-0.03225c-4.97008,0 -8.60358,4.71208 -7.25267,9.45642c12.1045,42.48758 36.94058,82.90758 81.20192,87.29c4.36092,0.43 8.12342,-3.08167 8.12342,-7.42825v-13.7815c0,-3.95242 3.09958,-7.34942 7.08425,-7.44975c0.13975,-0.00358 0.2795,-0.00358 0.41925,-0.00358c11.70675,0 24.81817,17.03875 29.40483,25.00808c1.31867,2.29333 3.784,3.69083 6.45,3.69083h17.81992c5.19942,0 8.5355,-5.51475 6.03075,-10.02617z">
+                      </path>
+                    </g>
+                    <path d="" fill="none"></path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-youtube"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- END FOOTER конец подвал -->
+
+  </main>
+
+  <script src="js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>
