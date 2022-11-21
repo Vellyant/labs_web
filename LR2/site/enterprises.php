@@ -4,7 +4,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
 
 
-$region_arr=get_regions_table();
+
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
@@ -14,6 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   $annual_production_from  = htmlentities($_GET["annual_production_from"], ENT_QUOTES, 'UTF-8');
   $annual_production_to = htmlentities($_GET["annual_production_to"], ENT_QUOTES, 'UTF-8');
 }
+
+$region_arr=get_regions_table();
 
 list($img,$name_company,$region,$description, $annual_production)=get_company_table($name_company_input,$region_input,
 $description_input,$annual_production_from,$annual_production_to);
@@ -108,18 +110,17 @@ $description_input,$annual_production_from,$annual_production_to);
   </div>
 
 </main>
-<script>
-document.querySelector("#reset").onclick = function(){
-  //document.getElementById('input_company').value = '';
 
-  $('#input_company').val("");
+<script>
+  $("#reset").click(function(){
+    $('#input_company').val("");
   $('#input_description').val("");
   $('#annual_production_from').val("");
   $('#annual_production_to').val("");
 
   $('#select_region option:contains("Выберите регион")').prop('selected', true);
-  
-}
+  });
+ 
 </script>
 
 <?php
