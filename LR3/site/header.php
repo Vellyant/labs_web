@@ -2,7 +2,7 @@
   <!doctype html>
 <html lang="en">
 <head>
-  <title>Lab 2</title>
+  <title>Lab 3</title>
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <script src="js/bootstrap.bundle.js"></script>

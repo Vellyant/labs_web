@@ -1,4 +1,4 @@
 <?
-$path = "/site/enterprises.php";
+$path = "/site/registration.php";
 header("Location: $path");
 ?>
