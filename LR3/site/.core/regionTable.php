@@ -1,5 +1,5 @@
 <?
-require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/db.php");
 class regions
 {
 

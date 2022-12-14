@@ -26,8 +26,9 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
 
-        <a class="nav-link" href="#">Регистрация</a>
-        <button class="btn btn-outline-success me-2" type="button">Войти</button>
+        <a class="nav-link" href="registration.php">Регистрация</a>
+        <a class="btn btn-outline-success me-2" href="sign_in.php" role="button">Войти</a>
+        
       </div>
     </nav>
 
