@@ -4,65 +4,63 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
 ?>
 
 
-
-
 <div class="container container-fluid my-5">
     <div class="form-floating my-2">
-        <input type="text" class="form-control" id="input_description" name="input_description" value="<? echo $description_input ?>">
-        <label for="input_description">Логин</label>
+        <input type="text" class="form-control" id="input_login" name="input_login" value="<? echo $description_input ?>">
+        <label for="input_login">Логин</label>
     </div>
 
     <div class="form-floating my-2">
-        <input type="text" class="form-control" id="input_description" name="input_description" value="<? echo $description_input ?>">
-        <label for="input_description">Пароль</label>
+        <input type="password" class="form-control" id="input_password" name="input_password" value="<? echo $description_input ?>">
+        <label for="input_password">Пароль</label>
     </div>
 
     <div class="form-floating my-2">
-        <input type="text" class="form-control" id="input_description" name="input_description" value="<? echo $description_input ?>">
-        <label for="input_description">ФИО</label>
+        <input type="text" class="form-control" id="input_fio" name="input_fio" value="<? echo $description_input ?>">
+        <label for="input_fio">ФИО</label>
     </div>
     <div class="form-floating my-2">
-        <input type="text" class="form-control" id="input_description" name="input_description" value="<? echo $description_input ?>">
-        <label for="input_description">дата рождения</label>
+        <input type="text" class="form-control" id="input_dateborn" name="input_dateborn" value="<? echo $description_input ?>">
+        <label for="input_dateborn">дата рождения</label>
     </div>
     <div class="form-floating my-2">
-        <input type="text" class="form-control" id="input_description" name="input_description" value="<? echo $description_input ?>">
-        <label for="input_description">адрес</label>
+        <input type="text" class="form-control" id="input_address" name="input_address" value="<? echo $description_input ?>">
+        <label for="input_address">адрес</label>
     </div>
 
     <div class="form-floating my-2 ">
-        <select class="form-select" id="select_region" name="select_region" aria-label="Пол">
+        <select class="form-select" id="select_sex" name="select_sex" aria-label="Пол">
             <option value="1">Мужской</option>
             <option value="2">Женский</option>
             <option value="3">Ламинат</option>
             <option value="4">Хеликоптер</option>
         </select>
-        <label for="select_region">Пол</label>
+        <label for="select_sex">Пол</label>
     </div>
 
     <div class="form-floating my-2">
-        <input type="text" class="form-control" id="input_description" name="input_description" value="<? echo $description_input ?>">
-        <label for="input_description">Интересы</label>
+        <input type="text" class="form-control" id="input_hobby" name="input_hobby" value="<? echo $description_input ?>">
+        <label for="input_hobby">Интересы</label>
     </div>
     <div class="form-floating my-2">
-        <input type="text" class="form-control" id="input_description" name="input_description" value="<? echo $description_input ?>">
-        <label for="input_description">Ссылка на профиль ВК</label>
+        <input type="text" class="form-control" id="input_link_vk" name="input_link_vk" value="<? echo $description_input ?>">
+        <label for="input_link_vk">Ссылка на профиль ВК</label>
     </div>
     <div class="form-floating my-2 ">
-        <select class="form-select" id="select_region" name="select_region" aria-label="Группа крови">
+        <select class="form-select" id="select_blood_type" name="select_blood_type" aria-label="Группа крови">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
         </select>
-        <label for="select_region">Группа крови</label>
+        <label for="select_blood_type">Группа крови</label>
     </div>
     <div class="form-floating my-2 ">
-        <select class="form-select" id="select_region" name="select_region" aria-label="Резус-фактор">
+        <select class="form-select" id="select_rh_factor" name="select_rh_factor" aria-label="Резус-фактор">
             <option value="1">Положительная</option>
             <option value="2">Отрицательная</option>
         </select>
-        <label for="select_region">Резус-фактор</label>
+        <label for="select_rh_factor">Резус-фактор</label>
     </div>
     <div class="d-flex justify-content-center my-4">
         <button type="submit" class="btn btn-success mx-3">Зарегестрироваться</button>
