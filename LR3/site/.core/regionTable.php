@@ -3,17 +3,17 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/db.php");
 class regions
 {
 
-  private static function  get_regions_bd()
-  {
-    $statement = 'SELECT * FROM regions';
-    $regions = database::prepare($statement);
-    $regions->execute();
-   
-    return $regions;
-  }
+   private static function  get_regions_bd()
+   {
+      $statement = 'SELECT * FROM regions';
+      $regions = database::prepare($statement);
+      $regions->execute();
 
-  public static function get_region()
-  {
-    return  self::get_regions_bd();;
-  }
+      return $regions;
+   }
+
+   public static function get_region()
+   {
+      return  self::get_regions_bd();;
+   }
 }

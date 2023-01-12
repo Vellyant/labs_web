@@ -2,6 +2,7 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
 
+session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   $name_company_input = htmlentities($_GET["input_company"], ENT_QUOTES, 'UTF-8');
