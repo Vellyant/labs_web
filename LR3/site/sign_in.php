@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
 ?>
 <div class="container container-fluid my-5">
-    <form method="post">
+    <form method="post" action="signin">
     <div class="form-floating my-2">
         <input type="text" class="form-control" id="input_login" name="input_login" value="<? echo $login?>">
         <label for="input_login">Логин</label>

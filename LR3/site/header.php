@@ -1,5 +1,9 @@
-
-  <!doctype html>
+<?
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+?>
+ 
+ 
+ <!doctype html>
 <html lang="en">
 <head>
   <title>Lab 3</title>
@@ -26,7 +30,7 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
 
-        <a class="nav-link" href="registration.php">Регистрация</a>
+        <a class="nav-link" href="signup.php">Регистрация</a>
         <a class="btn btn-outline-success me-2" href="sign_in.php" role="button">Войти</a>
         
       </div>

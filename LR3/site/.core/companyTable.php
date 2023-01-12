@@ -2,15 +2,16 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/db.php");
 class company
 {
- 
-  static function  get_company_table($name_company_input,
-  $region_input,
-  $description_input,
-  $annual_production_from,
-  $annual_production_to)
-  {
+
+  static function  get_company_table(
+    $name_company_input,
+    $region_input,
+    $description_input,
+    $annual_production_from,
+    $annual_production_to
+  ) {
     $data_post = '';
-    
+
     if (!empty($name_company_input)) {
       $add = "enterprises.name like :company";
       !empty($data_post) ? $data_post .= " AND $add" : $data_post = $add;
