@@ -2,14 +2,6 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/db.php");
 class users
 {
-    private static function  get_user_bd()
-    {
-        $statement = 'SELECT * FROM users';
-        $users = database::prepare($statement);
-        $users->execute();
-        return $users;
-    }
-
     public static function sign_in(string $input_login, $input_password)
     {
         $statement = 'SELECT * FROM users WHERE users.login = :input_login AND users.password = :input_password';
@@ -33,19 +25,19 @@ class users
     }
 
     public static function sign_up(
-        $input_login,
-        $input_password,
-        $input_fio,
-        $input_dateborn,
-        $input_address,
-        $select_gender,
-        $input_hobby,
-        $input_link_vk,
-        $select_blood_type,
-        $select_rh_factor
+        string $input_login,
+        string $input_password,
+        string $input_fio,
+        string $input_dateborn,
+        string $input_address,
+        int $select_gender,
+        string $input_hobby,
+        string $input_link_vk,
+        int  $select_blood_type,
+        int $select_rh_factor
     ) {
         $statement = 'INSERT INTO users (login, password, fio, DOB, address, gender,
-        hobby,link_vk,blood_type, rh_factor)
+        interests,link_vk,blood_group,rhesus_factor)
         VALUES (:input_login, :input_password, :input_fio, :input_dateborn, :input_address, :select_gender,
         :input_hobby, :input_link_vk, :select_blood_type, :select_rh_factor)';
         $query = database::prepare($statement);

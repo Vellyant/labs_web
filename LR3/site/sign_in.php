@@ -2,13 +2,12 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $login = htmlentities($_POST["input_company"], ENT_QUOTES, 'UTF-8');
-    $input_password = htmlentities($_POST["input_description"], ENT_QUOTES, 'UTF-8');
-  }
+$result = action::signIn();
 ?>
 <div class="container container-fluid my-5">
-    <form method="post" action="signin">
+    <? echo $result;
+    ?>
+    <form method="post" action="sign_in.php">
     <div class="form-floating my-2">
         <input type="text" class="form-control" id="input_login" name="input_login" value="<? echo $login?>">
         <label for="input_login">Логин</label>

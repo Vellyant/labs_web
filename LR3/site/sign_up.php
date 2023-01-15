@@ -1,33 +1,39 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
-require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
+$errors = action::signUp();
 
+require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
+var_dump($_POST);
 ?>
 
 
 <div class="container container-fluid my-5">
-    <form method="post" action="signup.php">
 
+    <?
+    foreach ($errors as $key => $value) {
+        echo "$value <br>";
+    }
+    ?>
+    <form method="post" action="sign_up.php">
         <div class="form-floating my-2">
-            <input type="text" class="form-control" id="input_login" name="input_login" value="<? echo $input_login ?>">
+            <input type="text" class="form-control" id="input_login" name="input_login" value="<? echo htmlspecialchars($_POST['input_login']) ?>">
             <label for="input_login">Логин</label>
         </div>
-
         <div class="form-floating my-2">
-            <input type="password" class="form-control" id="input_password" name="input_password" value="<? echo $input_password ?>">
+            <input type="password" class="form-control" id="input_password" name="input_password" value="<? echo htmlspecialchars($_POST['input_password']) ?>">
             <label for="input_password">Пароль</label>
         </div>
 
         <div class="form-floating my-2">
-            <input type="text" class="form-control" id="input_fio" name="input_fio" value="<? echo $input_fio ?>">
+            <input type="text" class="form-control" id="input_fio" name="input_fio" value="<? echo htmlspecialchars($_POST['input_fio']) ?>">
             <label for="input_fio">ФИО</label>
         </div>
         <div class="form-floating my-2">
-            <input type="text" class="form-control" id="input_dateborn" name="input_dateborn" value="<? echo $input_dateborn ?>">
+            <input type="text" class="form-control" id="input_dateborn" name="input_dateborn" value="<? echo htmlspecialchars($_POST['input_dateborn']) ?>">
             <label for="input_dateborn">дата рождения</label>
         </div>
         <div class="form-floating my-2">
-            <input type="text" class="form-control" id="input_address" name="input_address" value="<? echo $input_address ?>">
+            <input type="text" class="form-control" id="input_address" name="input_address" value="<? echo htmlspecialchars($_POST['input_address']) ?>">
             <label for="input_address">адрес</label>
         </div>
 
@@ -43,11 +49,11 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
         </div>
 
         <div class="form-floating my-2">
-            <input type="text" class="form-control" id="input_hobby" name="input_hobby" value="<? echo $input_hobby ?>">
+            <input type="text" class="form-control" id="input_hobby" name="input_hobby" value="<? echo htmlspecialchars($_POST['input_hobby']) ?>">
             <label for="input_hobby">Интересы</label>
         </div>
         <div class="form-floating my-2">
-            <input type="text" class="form-control" id="input_link_vk" name="input_link_vk" value="<? echo $input_link_vk ?>">
+            <input type="text" class="form-control" id="input_link_vk" name="input_link_vk" value="<? echo htmlspecialchars($_POST['input_link_vk']) ?>">
             <label for="input_link_vk">Ссылка на профиль ВК</label>
         </div>
         <div class="form-floating my-2 ">

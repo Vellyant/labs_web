@@ -1,10 +1,6 @@
 <?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
+if (!logic::authorized()) echo "<p class='text-center  my-5'>Доступно только для авторизированных пользователей</p>";
+else require_once($_SERVER['DOCUMENT_ROOT'] . "/site/enterprises.php");
 ?>
-
-<main role="main">
-  <div class="container container-fluid my-3 bg-light border border-success border-3">
-    <p>Доступно только для авторизированных пользователей</p>
-    <a href="enterprises.php" class="link-primary">Фильтрация</a>
-  </div>
-</main>
