@@ -1,9 +1,8 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
 $errors = action::signUp();
-
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
-var_dump($_POST);
+
 ?>
 
 

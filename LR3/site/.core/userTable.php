@@ -36,21 +36,21 @@ class users
         int  $select_blood_type,
         int $select_rh_factor
     ) {
-        $statement = 'INSERT INTO users (login, password, fio, DOB, address, gender,
-        interests,link_vk,blood_group,rhesus_factor)
-        VALUES (:input_login, :input_password, :input_fio, :input_dateborn, :input_address, :select_gender,
-        :input_hobby, :input_link_vk, :select_blood_type, :select_rh_factor)';
+        $statement = 'INSERT INTO users (login,password,blood_group,rhesus_factor,link_vk,interests, gender, address, DOB, fio)
+        VALUES (:input_login,:input_password,:select_blood_type, :select_rh_factor, :input_link_vk,
+        :input_hobby, :select_gender, :inputaddress, :input_dateborn,:input_fio)';
+        
         $query = database::prepare($statement);
         $query->bindValue(':input_login', $input_login);
         $query->bindValue(':input_password', $input_password);
-        $query->bindValue(':input_fio', $input_fio);
-        $query->bindValue(':input_dateborn', $input_dateborn);
-        $query->bindValue(':input_address', $input_address);
-        $query->bindValue(':select_gender', $select_gender);
-        $query->bindValue(':input_hobby', $input_hobby);
-        $query->bindValue(':input_link_vk', $input_link_vk);
         $query->bindValue(':select_blood_type', $select_blood_type);
         $query->bindValue(':select_rh_factor', $select_rh_factor);
+        $query->bindValue(':input_link_vk', $input_link_vk);
+        $query->bindValue(':input_hobby', $input_hobby);
+        $query->bindValue(':select_gender', $select_gender);
+        $query->bindValue(':inputaddress', $input_address);
+        $query->bindValue(':input_dateborn', $input_dateborn);
+        $query->bindValue(':input_fio', $input_fio);
 
         if (!$query->execute()) {
             throw new PDOException("Ошибка регистрации");

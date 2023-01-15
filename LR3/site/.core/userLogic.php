@@ -35,9 +35,7 @@ class logic
             return "Пользователь не найден";
         }
 
-        if ( //password_hash($password, PASSWORD_BCRYPT) 
-            $password != $user['password']
-        ) {
+        if (!password_verify($password, $user['password'])) {
             return "Неверный пароль";
         }
 
