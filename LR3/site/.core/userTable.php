@@ -36,7 +36,7 @@ class users
         int  $select_blood_type,
         int $select_rh_factor
     ) {
-        $statement = "INSERT INTO 'users' ('login','password','blood_group','rhesus_factor','link_vk','interests', 'gender', 'address', 'DOB', 'fio')
+        $statement = "INSERT INTO users (login,password,blood_group,rhesus_factor,link_vk,interests, gender, address, DOB, fio)
         VALUES (:input_login,:input_password,:select_blood_type, :select_rh_factor, :input_link_vk,
         :input_hobby, :select_gender, :inputaddress, :input_dateborn,:input_fio)";
         

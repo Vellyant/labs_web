@@ -1,8 +1,10 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
-$result = action::signIn();
+
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
 
+$result = action::signIn();
 
 ?>
 <div class="container container-fluid my-5">

@@ -13,7 +13,6 @@ class action
         $error = logic::signUp(
             $_POST['input_login'],
             $_POST['input_password'],
-            $_POST['input_password'],
             $_POST['input_fio'],
             $_POST['input_dateborn'],
             $_POST['input_address'],
