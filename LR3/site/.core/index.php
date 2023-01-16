@@ -1,4 +1,5 @@
 <?
+if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/db.php") ;
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/regionTable.php") ;
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/companyTable.php") ;

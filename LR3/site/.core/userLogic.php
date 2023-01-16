@@ -41,6 +41,7 @@ class logic
 
         $_SESSION['USER_ID'] = $user['id_user'];
         $_SESSION['USER_LOGIN'] = $user['login'];
+        header("Location:/");
         return '';
     }
 

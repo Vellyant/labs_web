@@ -1,10 +1,8 @@
 <?
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
-if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 
-if (isset($_POST['signOut'])) {
-  logic::signOut();
-}
+action::signOut();
+
 ?>
 
 

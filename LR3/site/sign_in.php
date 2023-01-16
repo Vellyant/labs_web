@@ -1,16 +1,17 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
-
+$result = action::signIn();
 
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
 
-$result = action::signIn();
+
 
 ?>
 <div class="container container-fluid my-5">
     <? echo $result;
     ?>
     <form method="post" action="sign_in.php">
+    <input type="hidden" name="action" value="signin">
     <div class="form-floating my-2">
         <input type="text" class="form-control" id="input_login" name="input_login" value="<? echo $login?>">
         <label for="input_login">Логин</label>

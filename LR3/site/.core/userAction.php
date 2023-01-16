@@ -25,21 +25,26 @@ class action
 
 
         if (!count($error)) {
-            header('Location: ' . $_SERVER['PHP_SELF'] . '?success=y');
-            die();
+
+            logic::signIn($_POST['input_login'], $_POST['input_password']);
         }
 
         return $error;
     }
+    public static function signOut()
+    {
 
+        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signOut'])) {
+
+            logic::signOut();
+        }
+    }
     public static function signIn()
     {
 
-        if ($_SERVER['REQUEST_METHOD'] != 'POST')
+        if ($_SERVER['REQUEST_METHOD'] != 'POST' || $_POST["action"] != "signin")
             return;
 
-        if ($_SERVER['PHP_SELF'] != '/site/sign_in.php')
-            return;
 
         $result = logic::signIn($_POST['input_login'], $_POST['input_password']);
 
