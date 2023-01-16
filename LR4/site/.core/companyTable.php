@@ -26,6 +26,18 @@ class company
 
   public static function delete_company(int $id)
   {
+    $statement = 'SELECT enterprises.id_company,enterprises.photo FROM enterprises WHERE enterprises.id_company=:id LIMIT 1';
+
+    $query = database::prepare($statement);
+    $query->bindValue(':id', $id);
+    $query->execute();
+    $enterprises = $query->fetchAll();
+    $enterprise = $enterprises[0];
+    if ($enterprise['photo'] != "no_image.png") {
+      $filepath = $_SERVER['DOCUMENT_ROOT'] . "/site/inc/logo_enterprises/" . $enterprise['photo'];
+      unlink($filepath);
+    }
+    
     $statement = 'DELETE FROM enterprises WHERE id_company=:id';
     $enterprises = database::prepare($statement);
     $enterprises->bindValue(':id', $id);

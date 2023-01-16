@@ -1,6 +1,6 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site/.core/index.php");
-require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
+
 
 $id_company =  htmlentities($_POST["id"], ENT_QUOTES, 'UTF-8');
 $name_company_input = htmlentities($_POST["input_company"], ENT_QUOTES, 'UTF-8');
@@ -22,6 +22,7 @@ $result = action::edit_table();
 
 $regions = regions::get_region();
 $enterprises = company::get_company_table();
+require_once($_SERVER['DOCUMENT_ROOT'] . "/site/header.php");
 
 ?>
 
@@ -84,8 +85,7 @@ $enterprises = company::get_company_table();
 
 
       <div class="d-flex justify-content-center my-4">
-        <input type="submit" class="btn btn-success mx-3" name="action" value="save"  id="save">
-        <input type="submit" class="btn btn-success mx-3" name="action" value="add">
+        <button type="submit" class="btn btn-success mx-3" name="action" value="add">Сохранить</button>
         <button type="button" class="btn btn-danger mx-3" id="reset">Очистить</button>
       </div>
     </form>

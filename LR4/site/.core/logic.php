@@ -3,7 +3,9 @@ class logic
 {
     public static function delete($id)
     {
+        var_dump($id);
         company::delete_company(intval($id));
+        
         return [];
     }
 
@@ -30,7 +32,7 @@ class logic
         $error = array();
         if ($name == "") $error[0] = "Введите название компании";
         if ($region == "") $error[1] = "Введите регион";
-
+        if ($img == "") $img = 'no_image.png';
         if (count($error)) return $error;
 
         company::edit_company(
