@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.head-up{ 
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 10px;
+    background-color: rgb(74,74,74);
+}
+
+.head-up a{
+    color: rgb(255, 255, 255);
+}
+
+
+
+.head-down{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+}
+.head-down form-inline{
+    padding-left: 150;
+  right: 150;
+  margin:auto;
+  max-width:100%;
+}
+
+.input-group{
+    
+padding-left: 5px;
+width: 1000px;
+
+}
+
+
+
+.goods-navbar a {
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.bg {
+    
+    background-image: url(inc/images/fon.jpg), linear-gradient(to right, rgb(190, 33, 106), rgba(255, 255, 255, 0)), url(inc/images/covid-banner.png);
+    background-repeat: no-repeat;
+    background-position: 113%, left, 10%;
+    color: rgb(255, 238, 253);
+  }
+
+.foundation{
+   padding-top: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
+   
+    
+
+}
+.foundation-title{
+
+    margin-left: 20%;
+}
+
+
+
+.card{
+    background-color: rgb(252,220,238);
+    color: #BE216A;
+    
+}
+
+
+.lower-footer li {
+    list-style-type: none;
+}
+.lower-footer ul {
+    padding: 0;
+}
+.lower-footer a {
+    color: white;
+}
+.lower-footer, .upper-footer, .copy{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 25px;
+}
+.upper-footer {
+    background-color: #DB5EA0;
+    color: white;
+}
+.lower-footer {
+    background-color: #DB5EA0;
+    color: white;
+}
+.copy {
+    background-color: #DB5EA0;
+    color: white
+}
+
+
+  

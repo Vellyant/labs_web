@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2023-06-07T21:18:39+03:00">
+<shop><name>Корсан</name>
+<company>ООО Корсан</company>
+<url>https//korsan.ru/</url>
+<platform>YML</platform>
+<version>1.0</version>
+<agency>Техника и оборудование</agency>
+<email>korsan@mail.ru</email>
+<categories>
+<category id='1'>ПК, ноутбуки, периферия</category>
+<category id='10' parentId='1'>Ноутбуки</category>
+<category id='11' parentId='1'>Переферия и аксессуары</category>
+<category id='12' parentId='1'>Компьютеры и ПО</category>
+</categories>
+<offers>
+<offer id='31100'>
+<price>100000</price>
+<description>Мощный игровой ноутбук</description>
+<category>10</category>
+<name>Ноутбук</name>
+</offer>
+<offer id='13542'>
+<price>1500</price>
+<description>Маршутизатор 1ГБ</description>
+<category>201</category>
+<name>Маршутизатор 11</name>
+</offer>
+<offer id='142211'>
+<price>1000</price>
+<description>Мышь</description>
+<category>11</category>
+<name>Мышка беспроводная</name>
+</offer>
+</offers>
+</shop>
+</yml_catalog>
